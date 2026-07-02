@@ -1,117 +1,92 @@
-🎬 Movie Recommendation App
+<div align="center">
+  
+# 🎬 Movie Recommendation App
 
-A simple full-stack movie recommendation prototype built using React (Vite), Tailwind CSS, Node.js, Express, and a local JSON dataset.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
 
-🚀 Features
+*A fast, modern full-stack movie recommendation prototype built with a React frontend and Node/Express backend.*
 
-* 🎞️ Display movies from a JSON dataset
-* 🎯 Filter movies by genre
-* ⚡ Fast development with Vite
-* 🎨 Styled using Tailwind CSS
-* 🛠️ Backend REST API using Node.js + Express
-* 🔄 Fetch movies from `http://localhost:3000/api/movies`
-* 🌐 CORS enabled for frontend–backend communication
+</div>
 
-📁 Folder Structure
+## 📌 Overview
 
-movie-recomm/
-├── server/
-│   └── index.js
-├── src/
-│   ├── components/
-│   │   ├── GenreSelector.jsx
-│   │   └── MovieList.jsx
-│   ├── data/
-│   │   └── movies.json
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── public/
-├── package.json
-├── vite.config.js
-└── README.md
+This project is a lightweight, full-stack web application designed to recommend movies based on genre filtering. It demonstrates the ability to build a responsive frontend using **React (Vite)** and **Tailwind CSS**, seamlessly connected to a custom REST API powered by **Node.js** and **Express**.
 
+## 🚀 Key Features
 
-
-
-🖥️ Frontend Setup (Vite + React)
-
-1️⃣ Install dependencies
-
-npm install
-
-2️⃣ Run the frontend development server
-
-npm run dev
-
-Frontend will run at →
-👉 **[http://localhost:5173](http://localhost:5173)**
-
-
-
-🛠️ Backend Setup (Node + Express)
-
-1️⃣ Move to the server folder
-
-cd server
-
-2️⃣ Install backend dependencies
-
-npm install express cors
-
-3️⃣ Run the server
-
-node index.js
-
-Backend will run at →
-👉 **[http://localhost:3000](http://localhost:3000)**
-
-
-🔌 API Endpoint
-
-**GET /api/movies**
-
-Returns all movies from `src/data/movies.json`.
-
-
-🌟 Screenshots
-
-🖼️ Home Page
-
-
-## 📦 Technologies Used
-
-* React (Vite)
-* Tailwind CSS
-* Node.js
-* Express
-* CORS
-* JSON dataset
-
-
-## ⚙️ Requirements
-
-* Node.js 18+
-* npm 8+
+- **Dynamic UI:** Real-time movie filtering by genre with instant DOM updates.
+- **RESTful API:** Custom Express server serving JSON datasets via standard HTTP GET requests.
+- **Modern Build Tools:** Powered by Vite for lightning-fast HMR (Hot Module Replacement) and optimized production builds.
+- **Responsive Design:** Fully styled with Tailwind CSS for a mobile-first, fluid user experience.
+- **CORS Configured:** Secure cross-origin resource sharing implemented for seamless client-server communication.
 
 ---
 
-## 📝 How to Run the Full Project
+## 🛠️ Tech Stack
 
-### Start Backend
+| Layer | Technologies |
+|-------|-------------|
+| **Frontend** | React 19, Vite, Tailwind CSS |
+| **Backend** | Node.js, Express.js, CORS |
+| **Data Layer** | Local JSON Store |
 
+---
+
+## 📂 Architecture & Structure
+
+```text
+movie-recomm/
+├── server/                 # Express Backend API
+│   └── index.js            # Main server entry point
+├── src/                    # React Frontend
+│   ├── components/         # Reusable UI components
+│   │   ├── GenreSelector.jsx
+│   │   └── MovieList.jsx
+│   ├── data/               # Movie dataset
+│   │   └── movies.json
+│   ├── App.jsx             # Main application component
+│   └── index.css           # Global Tailwind styles
+```
+
+---
+
+## ⚙️ Local Development Setup
+
+Ensure you have **Node.js (v18+)** and **npm** installed on your machine.
+
+### 1. Start the Backend API (Terminal 1)
+```bash
 cd server
+npm install express cors
 node index.js
+```
+*The API will start at `http://localhost:3000/api/movies`*
 
-### Start Frontend (in another terminal)
-
+### 2. Start the Frontend Application (Terminal 2)
+```bash
+# Return to the root directory
+npm install
 npm run dev
+```
+*The React app will start at `http://localhost:5173`*
 
-🧑‍💻 Developer
+---
 
-Medha Masanam
-GitHub: [https://github.com/MedhaMasanam123](https://github.com/MedhaMasanam123)
+## 🔌 API Endpoints
 
-⭐ Support
+### `GET /api/movies`
+Returns a JSON array containing the full movie dataset, including titles, genres, and metadata.
 
-If you liked this project, please give it a **⭐ on GitHub**!
+---
+
+## 🧑‍💻 Developer
+
+**Medha Masanam**
+- GitHub: [@MedhaMasanam](https://github.com/MedhaMasanam)
+- Portfolio: [MedhaMasanam.github.io](https://MedhaMasanam.github.io)
+
+*If you found this repository helpful, please consider leaving a ⭐!*
